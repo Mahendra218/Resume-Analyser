@@ -1,4 +1,4 @@
-# 🤖 AI Resume Analyzer
+ AI Resume Analyzer
 
 An AI-powered Resume Analyzer built with **Python, Streamlit, Scikit-learn, and OpenRouter AI** that analyzes resumes, predicts job categories, calculates ATS scores, matches resumes with job descriptions, detects missing skills, generates AI feedback, interview questions, and downloadable PDF reports.
 
