@@ -17,7 +17,7 @@ tfidf = joblib.load("model/tfidf.pkl")
 # Page Config
 st.set_page_config(page_title="AI Resume Analyzer", layout="wide")
 
-st.title("🤖 AI Resume Analyzer")
+st.title(" AI Resume Analyzer")
 
 
 uploaded_file = st.file_uploader(
@@ -75,7 +75,7 @@ if uploaded_file is not None:
         st.success("Excellent Resume!")
 
     
-    st.subheader("🤖 AI Resume Suggestions")
+    st.subheader(" AI Resume Suggestions")
 
     if st.button("Analyze with AI"):
 
@@ -90,7 +90,7 @@ if uploaded_file is not None:
         missing = []
 
 
-    st.subheader("🎤 AI Interview Questions")
+    st.subheader(" AI Interview Questions")
 
     if st.button("Generate Interview Questions"):
 
@@ -133,7 +133,7 @@ if uploaded_file is not None:
 
             if matched:
                 for skill in matched:
-                    st.success(f"✅ {skill}")
+                    st.success(f"{skill}")
             else:
                 st.warning("No matching skills found.")
 
@@ -141,7 +141,7 @@ if uploaded_file is not None:
 
             if missing:
                 for skill in missing:
-                    st.error(f"❌ {skill}")
+                    st.error(f" {skill}")
             else:
                 st.success("No missing skills!")
 
@@ -159,7 +159,7 @@ if uploaded_file is not None:
         with open("Resume_Report.pdf", "rb") as pdf_file:
 
             st.download_button(
-                label="📥 Download Report",
+                label=" Download Report",
                 data=pdf_file,
                 file_name="Resume_Report.pdf",
                 mime="application/pdf"
